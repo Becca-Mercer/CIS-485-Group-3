@@ -1,6 +1,6 @@
-<!--- public/views/templ1.html-->
+<!--- public/views/info_img_bot.html-->
 <!doctype html> 
-<!-- an image with 4 answer options  
+<!-- for information above a image 
 	{{ tag}} is added for implementing handlebars -->
 <html lang = "en">
 
@@ -20,23 +20,17 @@
 		<DIV class="fluid-container">
 			<DIV class="row">
 				<H1 style = "text-align:center"> {{slTitle}}</H1>
+				
+			</DIV>
+			<DIV class="row">
+				<DIV class = "col-xs-12 col-md-12 col-lg-12">
+					<p style= "text-align: center"> {{question}}</P>
+				</DIV>
 			</DIV>
 			<DIV class="row">
 				<DIV class = "col-xs-12 col-md-12 col-lg-12">
 						<img src="img1.jpg" alt ="Please select an image" class="img-responsive"
 						style = "max-height:700px; padding:10px; margin: auto" /> 
-				</DIV>
-			</DIV>	
-			<DIV class="row">
-					<DIV style ="padding:10px" role= "group">			
-					<DIV class="col-xs-6 col-md-6 col-lg-6" style= "text-align:center">
-						<BUTTON type="button" class = "btn btn-primary btn-lg btn-block"> A. {{ans1}}</BUTTON>
-						<BUTTON type="button" class = "btn btn-primary btn-lg btn-block"> B. {{ans2}}</BUTTON>
-					</DIV>
-					<DIV class="col-xs-6 col-md-6 col-lg-6" style= "text-align:center">					
-						<BUTTON type="button" class = "btn btn-primary btn-lg btn-block"> C. {{ans3}}</BUTTON>
-						<BUTTON type="button" class = "btn btn-primary btn-lg btn-block"> D. {{ans4}}</BUTTON>
-					</DIV>
 				</DIV>
 			</DIV>
 		</DIV>
