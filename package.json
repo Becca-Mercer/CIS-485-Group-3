@@ -1,0 +1,17 @@
+{
+	"name": "ClickerApplication",
+	"main": "server.js",
+	"version" : "1.0.0",
+	"description" : "An interactive clicker app for use in classroom setting",
+	"contributer" : [
+		{"name" : "Rebecca Mercer", "email" : "rebecca.mercer2017@gmail.com"},
+		{"name" : "Drew Pomnean" , "email" : "dpomnean@yahoo.com"},
+		{"name" : "Shehab Hasan" , "email" : "sqh4@case.edu"}
+	]
+	"dependencies":{
+		"express":"~4.5.1",
+		"mongoose":"~3.8.0",
+		"body-parser": "~1.4.2",
+		"mehtod-override": "~2.0.2"
+	}
+}	
