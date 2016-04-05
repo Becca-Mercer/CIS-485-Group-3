@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+div.classes{
+	position: absolute;
+	left: 5%;
+	top: 5%;
+}
+
+div.presentations{
+	position: absolute;
+	left: 50%;
+	top: 5%;
+}
+</style>
+<h2>Homepage</h2>
+<div class="classes">
+<form>
+  <section>
+    <h3>Class List</h3>
+    
+    <fieldset>
+      <legend>Select a Class</legend>
+      <ul>
+        <li>
+          <label for="class_1">
+            <input type="radio" id="class_1" name="class"/>
+            EECS 340
+          </label>
+        </li>
+        <li>
+          <label for="class_2">
+            <input type="radio" id="class_2" name="class"/>
+            PHIL 260
+          </label>
+        </li>
+        <li>
+          <label for="class_3">
+            <input type="radio" id="class_3" name="class" />
+            EECS 395
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+    <button type="button" onclick="alert('This button does nothing!')">View</button>
+	<button type="button" onclick="alert('This button does nothing!')">Join Session</button>
+  </section>
+</form>
+</div>
+
+<div class="presentations">
+<form>
+  <section>
+    <h3>PHIL 260</h3>
+    
+    <fieldset>
+      <legend>Select a Presentation</legend>
+      <ul>
+        <li>
+          <label for="presentation_1">
+            <input type="radio" id="presentation_1" name="presentation"/>
+            Aristotle
+          </label>
+        </li>
+        <li>
+          <label for="class_2">
+            <input type="radio" id="presentation_2" name="presentation"/>
+            Socratic Logic
+          </label>
+        </li>
+        <li>
+          <label for="class_3">
+            <input type="radio" id="presentation_3" name="presentation" />
+            Epicureanism 
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+    <button type="button" onclick="alert('This button does nothing!')">Edit</button>
+	<button type="button" onclick="alert('This button does nothing!')">Host</button>
+    <button type="button" onclick="alert('This button does nothing!')">Create New</button>
+	<button type="button" onclick="alert('This button does nothing!')">View Responses</button>
+  </section>
+</form> 
+</div>
+    
+</html>
