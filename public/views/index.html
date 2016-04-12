@@ -6,23 +6,35 @@
 <head>
 <meta charset="utf-8">
 <title>Paper Stack</title>
-<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="container">
+<div class="fluid-container">
 	<section id="content">
-		<form action="">
-			<h1>Login Form</h1>
-			<div>
-				<input type="text" placeholder="Username" required="" id="username" />
+		<form lass="form-horizontal" role="form" style="padding: 20px">
+			<div class = "row">
+				<div class= "col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4" style="padding:10px">
+					<h1>Login Form</h1>
+				</div>
 			</div>
-			<div>
-				<input type="password" placeholder="Password" required="" id="password" />
+			<div class = "row">
+				<div class= "col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4" style="padding:10px">
+					<input type="text" class="form-control" placeholder="Username" required="" id="username" />
+				</div>
 			</div>
-			<div>
-				<input type="submit" value="Log in" />
-				<a href="#">Lost your password?</a>
-				<a href="#">Register</a>
+			<div class = "row">
+				<div class= "col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4" style="padding:10px">
+					<input type="password" class="form-control" placeholder="Password" required="" id="password" />
+				</div>
+			</div>
+			<div class = "row">
+				<div class= "col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4" style="padding:10px">
+					<button class="btn btn-primary" type = "submit"> Submit</button>
+					<button class="btn btn-default" type = "register"> Register</button>
+					<a href="#">Lost your password?</a>
+				</div>	
 			</div>
 		</form><!-- form -->
 		
