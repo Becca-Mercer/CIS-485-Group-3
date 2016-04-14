@@ -1,0 +1,53 @@
+<!--- public/views/templ1.html-->
+<!doctype html> 
+<!-- for information below an image with 4 answer options 
+	{{ tag}} is added for implementing handlebars -->
+<html lang = "en">
+
+	<HEAD>
+		<META charset = "UTF-8" name="viewport" content="width=divice-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="template.css">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		
+		<TITLE> {{presTitle}} </TITLE>
+	</HEAD>
+	
+	<BODY>
+		<DIV class="fluid-container">
+			<DIV class="row">
+				<H1> {{slTitle}}</H1>
+				
+			</DIV>
+			<DIV class="row">
+				<DIV class = "col-xs-12 col-md-12 col-lg-12">
+						<img src="img1.jpg" alt ="Please select an image" class="img-responsive"/> 
+				</DIV>
+			</DIV>
+			<DIV class="row">
+				<DIV class = "col-xs-12 col-md-12 col-lg-12">
+					<p> {{question}}</P>
+				</DIV>
+			</DIV>
+			<DIV class="row">
+			
+			</DIV>
+			<DIV class="row">
+				<DIV role= "group">			
+					<DIV class="col-xs-6 col-md-6 col-lg-6">
+						<BUTTON type="button" class = "btn btn-primary btn-lg btn-block"> A. {{ans1}}</BUTTON>
+						<BUTTON type="button" class = "btn btn-primary btn-lg btn-block"> B. {{ans2}}</BUTTON>
+					</DIV>
+					<DIV class="col-xs-6 col-md-6 col-lg-6">					
+						<BUTTON type="button" class = "btn btn-primary btn-lg btn-block"> C. {{ans3}}</BUTTON>
+						<BUTTON type="button" class = "btn btn-primary btn-lg btn-block"> D. {{ans4}}</BUTTON>
+					</DIV>
+				</DIV>
+			</DIV>
+		</DIV>
+	</BODY>
+</HTML>
