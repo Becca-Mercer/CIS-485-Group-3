@@ -1,23 +1,31 @@
 body{
 	max-height: 800px;
 }
-.fluid-container{
-	max-height: inherit; 
-	background-color: green; 
+button{
+	margin:auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 div{
 	text-align:center;
+	padding-top:5px;
+	padding-bottom:5px;
+	text-align:center;
+	margin: auto;
+}
+.fluid-container{
+	max-height: inherit; 
+}
+h1{
+	text-align: center; 
 }
 img{
-	max-height:700px;
+	max-height:500px;
 	padding: 10px;
 	margin:auto;
 }
 img.small{
-	max-height:300px;
-}
-h1{
-	text-align: center; 
+	max-height:200px;
 }
 p{
 	text-align: center;
