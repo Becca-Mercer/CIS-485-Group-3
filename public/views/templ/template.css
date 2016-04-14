@@ -1,0 +1,24 @@
+body{
+	max-height: 800px;
+}
+.fluid-container{
+	max-height: inherit; 
+	background-color: green; 
+}
+div{
+	text-align:center;
+}
+img{
+	max-height:700px;
+	padding: 10px;
+	margin:auto;
+}
+img.small{
+	max-height:300px;
+}
+h1{
+	text-align: center; 
+}
+p{
+	text-align: center;
+}
