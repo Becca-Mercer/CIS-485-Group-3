@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Presentation</title>
+
+	<!-- Using bootstrap along with bootstrap js and jquery -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script scr="create.js"></script>
+	
+	</head>
+<body>
+
+<!-- Reset Create Presentation Button -->
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#presentation" id="new_presentation">Create Presentation</button>
+
+ <!-- Modal -->
+  <div class="modal fade" role="dialog" id ="presentation" aria-labelledby="dialogLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    
+      <!--Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4> Create Presentation</h4>
+        </div>
+        <div class="modal-body">
+			<label>Presentation Name: </label>
+			<input type="text" class="form-control" id="presentation_title" placeholder="Presentation name"></input>
+			<label> Class:</label>
+			<input type="text" class="form-control" id="class" placeholder="Input Class"></input>
+			<input type="checkbox" name="title" id= "title"> Title Screen</input>
+		</div>
+        <div class="modal-footer">
+			<button type="button" class="btn btn-info" data-toggle="modal" data-target="#slide" id="new_slide">Next ></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Modal-->
+  <div class="modal fade" role="dialog" id ="slide" aria-labelledby="slideLabel" aria-hidden="ture">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4> Create Presentation</h4>
+        </div>
+        <div class="modal-body">
+			<label> Slide Name: </label>
+			<input type = "text" class= "form-control" id="slide_title" placeholder="Slide Title"></input>
+			<label> Number of Answers: </label> 
+			<div class="dropdown open">
+				<button class ="btn btn-secondary dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">
+				  number of slides </button>
+					<ul class="dropdown-menu">
+						<li><button class="btn btn-secondary btn-block dropdown-item" type="button" id="2">2</button></li>
+						<li><button class="btn btn-secondary btn-block dropdown-item" type="button" id="3">3</button></li>
+						<li><button class="btn btn-secondary btn-block dropdown-item" type="button" id="4">4</button></li>
+						<li><button class="btn btn-secondary btn-block dropdown-item" type="button" id="5">5</button></li>
+						<li><button class="btn btn-secondary btn-block dropdown-item" type="button" id="6">6</button></li>
+					</ul>
+			</div>	
+			
+			<input type="checkbox" name="information" id="information"> Information Slide</input>
+		</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#content" id="slide_content">Next ></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- modal-->
+<div class="modal fade" role="dialog" id ="content" aria-labelledby="contentLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4> Create Presentation</h4>
+        </div>
+        <div class="modal-body">
+			<form class="form-horizontal">
+				<div class="form-group">
+					<textarea type="text" class="form-control" rows= "5" id= "question" placeholder="Question Text"></textarea>
+				</div>
+				<div class="form-group">
+					<label> Select picture for question</lable>
+					<input id="file-selector" type="file" />
+				</div>
+				<div class="form-group"> 
+					<div class="radio">
+						<label><input type="radio" name="ans">
+							<input type="text" class="form-control" id="ans1" placeholder= "Answer Option">
+							<input type="file">
+						</label>
+						<label><input type="radio" name="ans">
+							<input type="text" class="form-control" id="ans2" placeholder= "Answer Option">
+							<input type="file">
+						</label>
+						<label><input type="radio" name="ans">
+							<input type="text" class="form-control" id="ans3" placeholder= "Answer Option">
+							<input type="file">
+						</label>
+						<label><input type="radio" name="ans">
+							<input type="text" class="form-control" id="ans4" placeholder= "Answer Option">
+							<input type="file">
+						</label>
+						<label><input type="radio" name="ans">
+							<input type="text" class="form-control" id="ans5" placeholder= "Answer Option">
+							<input type="file">
+						</label>
+						<label><input type="radio" name="ans">
+							<input type="text" class="form-control" id="ans6" placeholder= "Answer Option">
+							<input type="file">
+						</label>
+					</div>
+		</div>
+        <div class="modal-footer">
+			<button type="button" class="btn btn-info" data-toggle="modal" data-target="#slide" id="new_slide">New Slide</button>
+			<button type="button" class="btn btn-info" data-dismis="modal">Finish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
