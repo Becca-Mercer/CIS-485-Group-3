@@ -17,4 +17,9 @@ $(document).ready(function(){
 		$("#slide").modal('show');
 		$("#content").modal('hide');
 	});
+	$("#close").click(function(){
+		$("presentation").modal('hide');
+		$("#slide").modal('hide');
+		$("#content").modal('hide');
+	});
 });
