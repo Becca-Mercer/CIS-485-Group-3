@@ -1,16 +1,20 @@
-$(document).on("click","#new_presentation", function(){
-	$(#presentation).hide();
-	$(#presentation).modal('show');
-});
-$(document).on("click","#new_slide", function(){
-	$(#presentation).hide();
-	$('.modal-backdrop').hide();
-	$(#content).hide();
-	$('.modal-backdrop').hide();
-	$(#slide).modal('show');
-});
-$(document).on("click","#slide_content", function(){
-	$(#slide).hide();
-	$('.modal-backdrop').hide();
-	$(#content).modal('show');
+$(document).ready(function(){
+	$("#new_presentation").click(function(){
+		$("#presentation").modal('show');
+		console.log("new_presentation");
+	});
+	$("#new_slide").click(function(){
+		$("#presentation").modal('hide');
+		$("#slide").modal('show');
+		console.log("new_slide");
+	});
+	$("#slide_content").click(function(){
+		$("#slide").modal('hide');
+		$("#content").modal('show');
+		console.log("slide_content");
+	});
+	$("#next_slide").click(function(){
+		$("#slide").modal('show');
+		$("#content").modal('hide');
+	});
 });
