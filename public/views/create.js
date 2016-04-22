@@ -8,15 +8,15 @@ $(document).ready(function(){
 	});
 	$("#slide_content").click(function(){
 		$("#slide").modal('hide');
-		$("#content").modal('show');
+		$("#slide-content").modal('show');
 	});
 	$("#next_slide").click(function(){
 		$("#slide").modal('show');
-		$("#content").modal('hide');
+		$("#slide-content").modal('hide');
 	});
 	$("#close").click(function(){
 		$("presentation").modal('hide');
 		$("#slide").modal('hide');
-		$("#content").modal('hide');
+		$("#slied-content").modal('hide');
 	});
 });
