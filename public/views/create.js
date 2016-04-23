@@ -22,4 +22,9 @@ $(document).ready(function(){
 		$("#slide").modal('hide');
 		$("#content").modal('hide');
 	});
+	$("#cancel").click(function(){
+		$("presentation").modal('hide');
+		$("#slide").modal('hide');
+		$("#content").modal('hide');
+	});
 });
