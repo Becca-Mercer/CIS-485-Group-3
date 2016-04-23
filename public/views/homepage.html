@@ -6,42 +6,37 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type-="text/css" href="style.css">
 	<script src="create.js"></script>
 </head>
 
 <html>
 <body>
-
-
 <h1>Homepage</h1>
-<div class= "col-xs-12 col-sm-4 col-sm-offset-0 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0" style="padding:10px">
+<div class= "col-xs-12 col-sm-4 col-md-4 col-lg-4">
 <form>
-  <section>
     <h3>Class List</h3>
-	<select id="classList" size="6" style="width:250px">
+	<select id="classList" size="6" >
+	<option selected disabled> Select Class</option>
 	</select>
-
 	<div>
     	<button class="btn btn-default" type="button" onclick="alert('This button does nothing!')">View</button>
 		<button class="btn btn-default" type="button" onclick="alert('This button does nothing!')">Join Session</button>
   	</div>
-  </section>
 </form>
 </div>
 
-<div class= "col-xs-12 col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0" style="padding:10px">
+<div class= "col-xs-12 col-sm-6 col-md-4 col-lg-4">
 <form>
-  <section>
     <h3>Presentations</h3>
-    <select id="presentationList" size="6" style="width:250px">
+    <select id="presentationList" size="6">
+	<option selected disabled> Select Presentation</option>
 	</select>
 	<div>
     	<button class="btn btn-default" type="button" onclick="alert('This button does nothing!')">Edit</button>
 		<button class="btn btn-default" type="button" onclick="alert('This button does nothing!')">Host</button>
     	<button type="button" class="btn btn-info" id="new_presentation">Create Presentation</button>
-		<button class="btn btn-default" type="button" onclick="alert('This button does nothing!')">Responses</button>
 	</div>  
-  </section>
 </form> 
 </div>
 <script>
@@ -139,8 +134,8 @@
 			<div class="modal-body">
 			<b>Instructions:</b> <br/>
 			To use images in your slides please host images on an image hosting site of your choice. Then provide the url in the text field.<br/> 
-			<b>NOTE:</b> image text box must be selected in order to show images and all answers must be in the same format. 
-				<form class="form-horizontal" style="padding:10px">
+			<b>NOTE:</b> Image text box must be selected in order to show images and all answers must be in the same format. 
+				<form class="form-horizontal">
 					<div class="form-group">
 						<input type="checkbox" id="imageQuestion"> Questions is an image</input></br>
 						<input type="checkbox" id="imageAnswers"> Answers are images</input>

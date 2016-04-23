@@ -1,3 +1,6 @@
+body{
+	width:100%;
+}
 h1{
 	font-size: 48px;
 }
@@ -7,8 +10,29 @@ h3{
 h4{
 	font-size: 18px;
 }
+div{
+	max-width:100%;
+}
+form{
+	padding:20px;
+}
+.form-inline{
+	padding:0px;
+}
 .login{
 	color:#FFFFFF;
 	background-color:#11334d;
+	padding-top:0px;
 	padding-bottom:35px;
+}
+.row{
+	padding:10px;
+}
+#classList{
+	min-width:250px;
+	margin:10px;
+}
+#presentationList{
+	min-width:250px;
+	margin:10px;
 }

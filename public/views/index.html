@@ -27,14 +27,14 @@
 								<form class="form-inline">						
 									<div class="form-group">
 										<label class="sr-only" for="username">Username</label>
-										<input type="text" class="form-control" placeholder="Username" required="" id="username" />
+										<input type="text" class="form-control" placeholder="Username" required="" id="username"/>
 									</div>
 									<div class= "form-group">
 										<label class="sr-only" for="password"> Password</label>
-										<input type="password" class="form-control" placeholder="Password" required="" id="password" />
+										<input type="password" class="form-control" placeholder="Password" required="" id="password"/>
 									</div>
-									<button class="btn btn-primary btn-sm" type = "submit" onclick="location='homepage.html'"> Submit</button>
-									<button class="btn btn-default btn-sm" type = "register" onclick="location='registration.html'"> Register</button>
+									<button class="btn btn-primary btn-sm" type = "submit" onclick="parent.location='homepage.html'"> Submit</button>
+									<button class="btn btn-default btn-sm" type = "register" onclick="parent.location='registration.html'"> Register</button>
 									<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#resetModal">Reset Password</button>
 							</form><!-- form -->
 						</div>
@@ -44,22 +44,22 @@
 		</div>	
 		<form lass="form-horizontal" role="form" style="padding: 20px">
 			<div class = "row">
-				<div class= "col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4" style="padding:10px">
+				<div class= "col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
 					<h3>Join Session - No registration required</h3>
 				</div>
 				<label class="sr-only" for="alias"> Screen Name</label>
-				<div class= "col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4" style="padding:10px">
+				<div class= "col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
 					<input type="text" class="form-control" placeholder="Screen name" required="" id="alias" />
 				</div>
 			</div>
 			<div class = "row">
-				<div class= "col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4" style="padding:10px">
+				<div class= "col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
 					<label class="sr-only" for="sessionID"> Session ID</label>
 					<input type="text" class="form-control" placeholder="Session ID" required="" id="SessionID" />
 				</div>
 			</div>
 			<div class = "row">
-				<div class= "col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4" style="padding:10px">
+				<div class= "col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
 					<button class="btn btn-primary" type = "join"> Join Session</button>
 				</div>	
 			</div>
