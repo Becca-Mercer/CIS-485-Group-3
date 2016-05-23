@@ -3,7 +3,6 @@
    <head>
       <title>Registration</title>
       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	  <link rel="stylesheet" type= "text/css" href="style.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
    </head>
@@ -14,11 +13,11 @@
       });
    </script> 
    <body>
-		<h1> New User Registration</h1>
-		<form class="form-horizontal" role="form" >
-        <br/>
+      
+      <form class="form-horizontal" role="form" style="padding: 20px">
+         <br>
 
-		<!-- Must have this to make form lined up -->
+         <!-- Must have this to make form lined up -->
          <div class="form-group" >
 
             <!-- this class controls the column grid for the label-->
@@ -60,6 +59,13 @@
          </div>
 
          <div class="form-group">
+            <label class="control-label col-xs-12 col-sm-2 col-md-2 col-lg-2" for="studentId">Student ID:</label>
+            <div class="col-xs-12 col-sm-10 col-md-6 col-lg-4">
+               <input type="text"  class="form-control" id="studentId" placeholder="Enter Student ID">
+            </div>
+         </div>
+
+         <div class="form-group">
             <label class="control-label col-xs-12 col-sm-2 col-md-2 col-lg-2" for="uni">Univeristy:</label>
             <div class="col-xs-12 col-sm-10 col-md-6 col-lg-4">
                <input type="text"  class="form-control" id="uni" placeholder="Enter University">
@@ -68,7 +74,6 @@
 
          <div class="form-group" style="margin: auto">
             <div class="col-xs-offset-5 col-sm-offset-5 col-md-offset-5 col-lg-offset-5">
-				<button type="button" class="btn btn-default" onclick="parent.location='index.html'"> Back</button>
                <button type="submit" class="btn btn-primary">Submit</button>
             </div>
          </div>

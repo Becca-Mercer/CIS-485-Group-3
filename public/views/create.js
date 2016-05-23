@@ -1,30 +1,22 @@
 $(document).ready(function(){
 	$("#new_presentation").click(function(){
 		$("#presentation").modal('show');
-		console.log("new_presentation");
 	});
 	$("#new_slide").click(function(){
 		$("#presentation").modal('hide');
 		$("#slide").modal('show');
-		console.log("new_slide");
 	});
 	$("#slide_content").click(function(){
 		$("#slide").modal('hide');
-		$("#content").modal('show');
-		console.log("slide_content");
+		$("#slide-content").modal('show');
 	});
 	$("#next_slide").click(function(){
 		$("#slide").modal('show');
-		$("#content").modal('hide');
+		$("#slide-content").modal('hide');
 	});
 	$("#close").click(function(){
 		$("presentation").modal('hide');
 		$("#slide").modal('hide');
-		$("#content").modal('hide');
-	});
-	$("#cancel").click(function(){
-		$("presentation").modal('hide');
-		$("#slide").modal('hide');
-		$("#content").modal('hide');
+		$("#slied-content").modal('hide');
 	});
 });
